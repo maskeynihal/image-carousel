@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Carousel</title>
+		<link rel="stylesheet" href="./css/carousel.css" />
+	</head>
+	<body id="main">
+		<div class="carousel-container" id="carousel1">
+			<img src="./images/image1.jpg" alt="Image" />
+			<img src="./images/image2.jpg" alt="Image" />
+			<img src="./images/image3.jpg" alt="Image" />
+			<!-- <img src="https://picsum.photos/200/300" alt="Image" />
+		<img src="https://loremflickr.com/320/240" alt="Image" />
+		<img src="https://picsum.photos/200/300" alt="Image" /> -->
+		</div>
+		<div class="carousel-container" id="carousel2">
+			<img src="./images/image1.jpg" alt="Image" />
+			<img src="./images/image2.jpg" alt="Image" />
+			<img src="./images/image3.jpg" alt="Image" />
+			<!-- <img src="https://picsum.photos/200/300" alt="Image" />
+		<img src="https://loremflickr.com/320/240" alt="Image" />
+		<img src="https://picsum.photos/200/300" alt="Image" /> -->
+		</div>
+
+		<script src="./js/carousel.js"></script>
+		<script>
+			var carousel = document.getElementById('carousel1');
+			var imageCarousel1 = new imageCarousel(carousel);
+			var carousel = document.getElementById('carousel2');
+			var imageCarousel2 = new imageCarousel(
+				carousel,
+				(width = '500px'),
+				(height = '300px'),
+				(animationTime = 5),
+				(holdTime = 6)
+			);
+		</script>
+	</body>
+</html>

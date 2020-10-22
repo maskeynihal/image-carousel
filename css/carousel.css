@@ -1,0 +1,40 @@
+.active {
+	background-color: #eee !important;
+}
+
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.carousel-item-wrapper {
+	float: left;
+	overflow: hidden;
+}
+
+.carousel-image-wrapper {
+	position: absolute;
+}
+
+.carousel-indicator {
+	position: absolute;
+	list-style: none;
+	z-index: 999;
+	text-align: center;
+	padding: 0;
+	bottom: 0px
+}
+
+.carousel-indicator-item {
+	border-radius: 50%;
+	background: #9e9e9e;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.arrow-button {
+	background-color: rgba(255, 255, 255, 0.2);
+}
